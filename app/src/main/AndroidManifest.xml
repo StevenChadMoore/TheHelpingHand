@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="davidurbina.disasterrelief">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity"
+            android:label="The Helping Hand">
+        </activity>
+        <activity android:name=".AssistanceActivity"
+            android:label="Request Assistance"/>
+        <activity android:name=".RequestShelterActivity"
+            android:label="Shelters Available"/>
+        <activity android:name=".RequestNecessitiesActivity"
+            android:label="Request Necessities"/>
+        <activity android:name=".RequestGeneralActivity"
+            android:label="Request General Assistance"/>
+        <activity android:name=".ServicesActivity"
+            android:label="Volunteer Opportunities"/>
+        <activity android:name=".VolunteerShelterActivity"
+            android:label="Open a Shelter"/>
+        <activity android:name=".VolunteerNecessitiesActivity"
+            android:label="People in Need"/>
+        <activity android:name=".DonateActivity"
+            android:label="Donation Options"/>
+        <activity android:name=".DonateNecessitiesActivity"
+            android:label="People in Need"/>
+        <activity android:name=".LoginActivity"
+            android:label="Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".SignUpActivity"
+            android:label="Sign Up"></activity>
+    </application>
+
+</manifest>

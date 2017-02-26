@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="davidurbina.disasterrelief.RequestNecessitiesActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Name: "
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="John Smith"
+            android:ems="10"
+            android:id="@+id/editText1"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Phone Number: "
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/PhoneNumber"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:hint="229-867-5309"
+            android:id="@+id/editText2"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="City: "
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/City"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Valdosta"
+            android:id="@+id/editText3"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="State: "
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/State"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Georgia"
+            android:id="@+id/editText4"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:text="Food"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Food"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:text="Clothing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Clothing"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:text="Toiletries"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Toiletries"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:text="Pet Supplies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/PetSupplies"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:text="Disenfectants"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Disenfectants"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:text="Sunscreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Sunscreen"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:text="Cameras"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cameras"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:text="Blankets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Blankets"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:text="Cash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cash"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Submit Request"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/SubmitRequest"
+            android:layout_weight="1"
+            android:onClick="onSubmitClick" />
+    </LinearLayout>
+</LinearLayout>
